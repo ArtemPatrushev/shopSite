@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="style_shop_cart.css">
+    <link rel="stylesheet" href="style_single_page.css">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <button><i class="fas fa-search"></i></button>
             </form>
             <div class="header_cart">
-                <a href="#"><img class="cart_img_header" src="img/cart.png" alt="photo"></a>
+                <a href="shop_cart.html"><img class="cart_img_header" src="img/cart.png" alt="photo"></a>
                 <button class="account_button">My Account<i class="fas fa-caret-down"></i></button>
             </div>
         </div>
@@ -31,7 +31,7 @@
     <nav class="top_nav">
         <a href="index.html">Home</a>
         <a href="#">Man</a>
-        <a href="single_page.html">Women</a>
+        <a href="#">Women</a>
         <a href="#">Kids</a>
         <a href="#">Accoseriese</a>
         <a href="#">Featured</a>
@@ -50,105 +50,109 @@
             </div>
         </div>
     </div>
-    <main class="cart">
+    <div class="present_product">
+        <img class="present_img" src="img/product_item.jpg" alt="photo">
+        <div class="product_slider_left"><img class="slider_img" src="img/caret_left.png" alt="photo"></div>
+        <div class="product_slider_right"><img class="slider_img" src="img/caret_right.png" alt="photo"></div>
+    </div>
+    <div class="product_description">
         <div class="container">
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <p>PRODUCT DETAILS</p>
+            <div class="product_char_block">
+                <div class="product_collection">WOMEN COLLECTION</div>
+                <p class="product_name">Moschino Cheap And Chic</p>
+                <p class="description_text">Compellingly actualize fully researched processes before proactive
+                    outsourcing. Progressively syndicate collaborative
+                    architectures before cutting-edge services. Completely visualize parallel core competencies rather
+                    than exceptional
+                    portals.</p>
+                <div class="other_product_inf">
+                    <p class="material">MATERIAL:<span>COTTON</span></p>
+                    <p class="material">DESIGNER:<span>BINBURHAN</span></p>
                 </div>
-                <div class="product_information">
-                    <p class="unity_price">UNITY PRICE</p>
-                    <p class="quantity">QUANTITY</p>
-                    <p class="shipping">SHIPPING</p>
-                    <p class="subtotal">SUBTOTAL</p>
-                    <p class="action">ACTION</p>
-                </div>
+                <p class="product_price">$561</p>
             </div>
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <img class="cart_img" src="img/cart_product1.jpg" alt="photo">
-                    <div class="cart_product_char">
-                        <p class="cart_product_name">Mango People T-shirt</p>
-                        <div class="cart_product_char_bottom">
-                            <p class="cart_product_char_text">Color: <span>Red</span></p>
-                            <p class="cart_product_char_text">Size: <span>Xll</span></p>
+            <form class="user_choose">
+                <div class="user_choose_inputs">
+                    <div class="input">
+                        <p>Choose Color</p>
+                        <div class="choose">
+                            <div class="red_square"></div>
+                            <select class="model_product_color" name="#" id="#">
+                                <option value="#">Red</option>
+                                <option value="#">Green</option>
+                                <option value="#">Blue</option>
+                            </select>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <p>CHOOSE SIZE</p>
+                        <div class="choose">
+                            <select class="model_product_size" name="#" id="#">
+                                <option value="#">XXL</option>
+                                <option value="#">XL</option>
+                                <option value="#">L</option>
+                            </select>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <p>QUANTITY</p>
+                        <div class="choose">
+                            <select class="model_product_size" name="#" id="#">
+                                <option value="#">2</option>
+                                <option value="#">3</option>
+                                <option value="#">4</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                <div class="product_information">
-                    <p class="unity_price">$150</p>
-                    <p class="quantity">2</p>
-                    <p class="shipping">FREE</p>
-                    <p class="subtotal">$300</p>
-                    <div class="img_action"><img src="img/cart_product_action.jpg" alt="photo"></div>
+                <div class="user_button">
+                    <button class="add"><img src="img/cart_red.svg" alt="photo"> Add to Cart</button>
                 </div>
-            </div>
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <img class="cart_img" src="img/cart_product2.jpg" alt="photo">
-                    <div class="cart_product_char">
-                        <p class="cart_product_name">Mango People T-shirt</p>
-                        <div class="cart_product_char_bottom">
-                            <p class="cart_product_char_text">Color: <span>Red</span></p>
-                            <p class="cart_product_char_text">Size: <span>Xll</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="product_information">
-                    <p class="unity_price">$150</p>
-                    <p class="quantity">2</p>
-                    <p class="shipping">FREE</p>
-                    <p class="subtotal">$300</p>
-                    <div class="img_action"><img src="img/cart_product_action.jpg" alt="photo"></div>
-                </div>
-            </div>
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <img class="cart_img" src="img/cart_product3.jpg" alt="photo">
-                    <div class="cart_product_char">
-                        <p class="cart_product_name">Mango People T-shirt</p>
-                        <div class="cart_product_char_bottom">
-                            <p class="cart_product_char_text">Color: <span>Red</span></p>
-                            <p class="cart_product_char_text">Size: <span>Xll</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="product_information">
-                    <p class="unity_price">$150</p>
-                    <p class="quantity">2</p>
-                    <p class="shipping">FREE</p>
-                    <p class="subtotal">$300</p>
-                    <div class="img_action"><img src="img/cart_product_action.jpg" alt="photo"></div>
-                </div>
-            </div>
-            <div class="cart_manage">
-                <button class="cart_manage_button">CLEAR SHOPPING CART</button>
-                <button class="cart_manage_button">CONTINUE SHOPPING</button>
-            </div>
+            </form>
         </div>
-    </main>
-    <div class="cart_user_form">
+    </div>
+    <div class="may_like">
         <div class="container">
-            <form class="shipping_addres" action="#">
-                <p class="user_form_head">Shipping Adress</p>
-                <input class="user_form_input" type="text" placeholder="Bangladesh">
-                <!-- добавить caret down -->
-                <input class="user_form_input" type="text" placeholder="State">
-                <input class="user_form_input" type="text" placeholder="Postcode/Zip">
-                <button class="user_form_button">get a quote</button>
-            </form>
-            <form class="cart_user_coupon" action="#">
-                <p class="user_form_head">Coupon discount</p>
-                <p class="user_form_text">Enter your coupon code if you have one</p>
-                <input class="user_form_input" type="text" placeholder="State">
-                <button class="user_form_button">Apply coupon</button>
-            </form>
-            <div class="cart_total">
-                <div class="total_sum">
-                    <p class="total_text_top">Sub total<span>$900</span></p>
-                    <p class="total_text_bottom">GRAND TOTAL<span>$900</span></p>
+            <p class="may_like_head">you may like also</p>
+            <div class="proposal_product_block">
+                <div class="proposal_product">
+                    <div class="img_block">
+                        <img src="img/proposal_product1.png" alt="photo">
+                    </div>
+                    <div class="proposal_product_text">
+                        <p class="text_top">BLAZE LEGGINGS</p>
+                        <p class="text_bottom">$52.00</p>
+                    </div>
                 </div>
-                <button class="cart_buy_button">Proceed to checkout</button>
+                <div class="proposal_product">
+                    <div class="img_block">
+                        <img src="img/proposal_product2.png" alt="photo">
+                    </div>
+                    <div class="proposal_product_text">
+                        <p class="text_top">ALEXA SWEATER</p>
+                        <p class="text_bottom">$52.00</p>
+                    </div>
+                </div>
+                <div class="proposal_product">
+                    <div class="img_block">
+                        <img src="img/proposal_product3.png" alt="photo">
+                    </div>
+                    <div class="proposal_product_text">
+                        <p class="text_top">AGNES TOP</p>
+                        <p class="text_bottom">$52.00</p>
+                    </div>
+                </div>
+                <div class="proposal_product">
+                    <div class="img_block">
+                        <img src="img/proposal_product4.png" alt="photo">
+                    </div>
+                    <div class="proposal_product_text">
+                        <p class="text_top">SYLVA SWEATER</p>
+                        <p class="text_bottom">$52.00</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -243,6 +247,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
