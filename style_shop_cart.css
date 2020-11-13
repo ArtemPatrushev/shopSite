@@ -197,7 +197,6 @@ body {
 }
 
 .feedback_subscribe_block {
-  margin-top: 97px;
   background: url(img/feedback_subscribe_block.jpg) no-repeat center bottom, #ccc;
   background-size: cover;
   height: 438px;
@@ -612,6 +611,21 @@ body {
   font-weight: 700;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
 .cart {
   margin-top: 90px;
 }
@@ -768,7 +782,7 @@ body {
 
 .cart_user_form {
   margin-top: 63px;
-  margin-bottom: -19px;
+  margin-bottom: 79px;
 }
 
 .cart_user_form .container {
