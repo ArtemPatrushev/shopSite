@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shop site</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/style_shop_cart.css">
+    <link rel="stylesheet" href="./css/style_checkout.css">
+    <title>shop site</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                 <button><i class="fas fa-search"></i></button>
             </form>
             <div class="header_cart">
-                <a href="#"><img class="cart_img_header" src="img/cart.png" alt="photo"></a>
+                <a href="shop_cart.html"><img class="cart_img_header" src="img/cart.png" alt="photo"></a>
                 <button class="account_button">My Account<i class="fas fa-caret-down"></i></button>
             </div>
         </div>
@@ -36,7 +36,7 @@
         <a href="#">Accoseriese</a>
         <a href="#">Featured</a>
         <a href="#">Hot</a>
-        <a href="checkout.html">Deals</a>
+        <a href="#">Deals</a>
     </nav>
     <div class="new_arrivals">
         <div class="container">
@@ -50,107 +50,87 @@
             </div>
         </div>
     </div>
-    <main class="cart">
-        <div class="container">
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <p>PRODUCT DETAILS</p>
-                </div>
-                <div class="product_information">
-                    <p class="unity_price">UNITY PRICE</p>
-                    <p class="quantity">QUANTITY</p>
-                    <p class="shipping">SHIPPING</p>
-                    <p class="subtotal">SUBTOTAL</p>
-                    <p class="action">ACTION</p>
-                </div>
-            </div>
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <img class="cart_img" src="img/cart_product1.jpg" alt="photo">
-                    <div class="cart_product_char">
-                        <p class="cart_product_name">Mango People T-shirt</p>
-                        <div class="cart_product_char_bottom">
-                            <p class="cart_product_char_text">Color: <span>Red</span></p>
-                            <p class="cart_product_char_text">Size: <span>Xll</span></p>
-                        </div>
+    <div class="container main">
+        <details class="check_detail">
+            <summary>
+                <p>01. SHIPPING ADRESS</p>
+            </summary>
+            <div class="checkout_block">
+                <form action="#" class="register_form">
+                    <p class="register_head">CHECK AS A GUEST OR REGISTER</p>
+                    <p class="register_text">Register with us for future convenience</p>
+                    <div class="user_check1">
+                        <input type="radio" id="reg1">
+                        <label class="label_check" for="reg1">CHECKOUT AS GUEST</label>
                     </div>
-                </div>
-                <div class="product_information">
-                    <p class="unity_price">$150</p>
-                    <p class="quantity">2</p>
-                    <p class="shipping">FREE</p>
-                    <p class="subtotal">$300</p>
-                    <div class="img_action"><img src="img/cart_product_action.jpg" alt="photo"></div>
-                </div>
-            </div>
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <img class="cart_img" src="img/cart_product2.jpg" alt="photo">
-                    <div class="cart_product_char">
-                        <p class="cart_product_name">Mango People T-shirt</p>
-                        <div class="cart_product_char_bottom">
-                            <p class="cart_product_char_text">Color: <span>Red</span></p>
-                            <p class="cart_product_char_text">Size: <span>Xll</span></p>
-                        </div>
+                    <div class="user_check2">
+                        <input type="radio" id="reg2">
+                        <label class="label_check" for="reg2">REGISTER</label>
                     </div>
-                </div>
-                <div class="product_information">
-                    <p class="unity_price">$150</p>
-                    <p class="quantity">2</p>
-                    <p class="shipping">FREE</p>
-                    <p class="subtotal">$300</p>
-                    <div class="img_action"><img src="img/cart_product_action.jpg" alt="photo"></div>
-                </div>
-            </div>
-            <div class="shopping_grid_row">
-                <div class="cart_product">
-                    <img class="cart_img" src="img/cart_product3.jpg" alt="photo">
-                    <div class="cart_product_char">
-                        <p class="cart_product_name">Mango People T-shirt</p>
-                        <div class="cart_product_char_bottom">
-                            <p class="cart_product_char_text">Color: <span>Red</span></p>
-                            <p class="cart_product_char_text">Size: <span>Xll</span></p>
-                        </div>
+                    <p class="register_head">REGISTER AND SAVE TIME!</p>
+                    <p class="register_text">Register with us for future convenience</p>
+                    <p class="register_point">Fast and easy checkout</p>
+                    <p class="register_point">Easy access to your order history and status</p>
+                    <button class="register_button">CONTINUE</button>
+                </form>
+                <form action="#" class="already_registed_form">
+                    <p class="already_registed_head">Already registed?</p>
+                    <p class="already_registed_text">Please log in below</p>
+                    <div class="user_input">
+                        <label class="label_input">EMAIL ADDRESS<span>*</span></label>
+                        <input type="email">
                     </div>
-                </div>
-                <div class="product_information">
-                    <p class="unity_price">$150</p>
-                    <p class="quantity">2</p>
-                    <p class="shipping">FREE</p>
-                    <p class="subtotal">$300</p>
-                    <div class="img_action"><img src="img/cart_product_action.jpg" alt="photo"></div>
-                </div>
+                    <div class="user_input">
+                        <label class="label_input">PASSWORD<span>*</span></label>
+                        <input type="password">
+                    </div>
+                    <p class="required">*Required Fileds</p>
+                    <div class="button_pswd">
+                        <button class="already_register_button">Log in</button>
+                        <a href="#" class="forgot_pswd">Forgot Password ?</a>
+                    </div>
+                </form>
             </div>
-            <div class="cart_manage">
-                <button class="cart_manage_button">CLEAR SHOPPING CART</button>
-                <button class="cart_manage_button">CONTINUE SHOPPING</button>
-            </div>
-        </div>
-    </main>
-    <div class="cart_user_form">
-        <div class="container">
-            <form class="shipping_addres" action="#">
-                <p class="user_form_head">Shipping Adress</p>
-                <input class="user_form_input" type="text" placeholder="Bangladesh">
-                <!-- добавить caret down -->
-                <input class="user_form_input" type="text" placeholder="State">
-                <input class="user_form_input" type="text" placeholder="Postcode/Zip">
-                <button class="user_form_button">get a quote</button>
-            </form>
-            <form class="cart_user_coupon" action="#">
-                <p class="user_form_head">Coupon discount</p>
-                <p class="user_form_text">Enter your coupon code if you have one</p>
-                <input class="user_form_input" type="text" placeholder="State">
-                <button class="user_form_button">Apply coupon</button>
-            </form>
-            <div class="cart_total">
-                <div class="total_sum">
-                    <p class="total_text_top">Sub total<span>$900</span></p>
-                    <p class="total_text_bottom">GRAND TOTAL<span>$900</span></p>
-                </div>
-                <button class="cart_buy_button">Proceed to checkout</button>
-            </div>
-        </div>
+        </details>
+        <details class="check_detail">
+            <summary>
+                <p>02. BILLING INFORMATION</p>
+            </summary>
+            <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, pariatur impedit! Dignissimos modi
+                consequatur distinctio!</p>
+        </details>
+        <details class="check_detail">
+            <summary>
+                <p>03. SHIPPING INFORMATION</p>
+            </summary>
+            <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, pariatur impedit! Dignissimos modi
+                consequatur
+                distinctio!</p>
+        </details>
+        <details class="check_detail">
+            <summary>
+                <p>04. SHIPPING METHOD</p>
+            </summary>
+            <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, pariatur impedit! Dignissimos modi
+                consequatur
+                distinctio!</p>
+        </details>
+        <details class="check_detail">
+            <summary>
+                <p>05. PAYMENT METHOD</p>
+            </summary>
+            <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, pariatur impedit! Dignissimos modi
+                consequatur
+                distinctio!</p>
+        </details>
+        <details class="check_detail">
+            <summary>
+                <p>06. ORDER REVIEW</p>
+            </summary>
+            <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, pariatur impedit! Dignissimos modi
+                consequatur
+                distinctio!</p>
+        </details>
     </div>
     <div class="feedback_subscribe_block">
         <div class="container">
@@ -237,9 +217,11 @@
             <div class="footer_links">
                 <a href="https://facebook.com" class="web_links" target="blank"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://twitter.com" class="web_links" target="blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://dostup-linkedin.com/" class="web_links" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://dostup-linkedin.com/" class="web_links" target="blank"><i
+                        class="fab fa-linkedin-in"></i></a>
                 <a href="https://pinterest.ru" class="web_links" target="blank"><i class="fab fa-pinterest-p"></i></a>
-                <a href="https://plus.google.com" class="web_links" target="blank"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://plus.google.com" class="web_links" target="blank"><i
+                        class="fab fa-google-plus-g"></i></a>
             </div>
         </div>
     </footer>

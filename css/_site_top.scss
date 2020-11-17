@@ -10,20 +10,35 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1140px;
+    max-width: 1140px;
 }
 
 header {
-  height: 100px;
-  border-bottom: solid 1px #ececec;
-  background-color: #ffffff;
-  display: flex;
+    width: 100%;
+    height: 100px;
+    border-bottom: solid 1px #ececec;
+    background-color: #ffffff;
+
+    @media (max-width: 910px) {
+        height: auto;
+    }
+
+
     .container {
         height: inherit;
         display: flex;
         align-items: center;
+
+        @media (max-width: 1200px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        @media (max-width: 910px) {
+            flex-direction: column;
+        }
+
         .logo {
-            background-image: url(img/logo.png);
+            background-image: url(../img/logo.png);
             background-repeat: no-repeat;
             display: flex;
             align-items: center;
@@ -41,6 +56,10 @@ header {
                 font-weight: 900;
                 color: #f16d7f;
             }
+
+            @media (max-width: 910px) {
+                margin-top: 24px;
+            }
         }
         .header_search_form {
             margin-left: 37px;
@@ -55,6 +74,10 @@ header {
                 padding: 12px 15px;
                 outline: none;
                 box-sizing: border-box;
+
+                @media (max-width: 450px) {
+                    width: auto;
+                }
             }
             & button {
                 width: 37px;
@@ -84,11 +107,22 @@ header {
                     margin-left: 8px;
                 }
             }
+
+            @media (max-width: 910px) {
+                margin-top: 24px;
+                margin-left: 0;
+            }
         }
         .header_cart {
             margin-left: auto;
             display: flex;
             align-items: flex-end;
+
+            @media (max-width: 910px) {
+                margin: 0;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
             .cart_img_header {
                 width: 32px;
                 height: 29px;
@@ -114,8 +148,8 @@ header {
 
 .top_nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     height: 51px;
     & a:not(:last-child) {
         margin-right: 40px;
@@ -130,5 +164,17 @@ header {
     }
     & a:hover {
         border-bottom: 3px solid #ef5b70;
+    }
+
+    @media (max-width: 750px) {
+        padding-left: 32px;
+        padding-right: 32px;
+        height: auto;
+    }
+    @media (max-width: 570px) {
+        flex-direction: column;
+        & a:not(:last-child) {
+            margin-right: 0;
+        }
     }
 }

@@ -27,7 +27,7 @@ body {
                 color: #f16d7f;
                 border-bottom: 1px solid #ebebeb;
                 cursor: pointer;
-                background: url(img/caret-down-solid.svg) no-repeat right 5px center;
+                background: url(../img/caret-down-solid.svg) no-repeat right 5px center;
                 background-size: 10px;
             }
 
@@ -97,13 +97,13 @@ body {
                             margin-right: 10px;
                             width: 13px;
                             height: 13px;
-                            background: url(img/checkbox.png) no-repeat;
+                            background: url(../img/checkbox.png) no-repeat;
                         }
                         input[type="checkbox"] {
                             display: none;
                         }
                         input[type="checkbox"]:checked + .products_checkbox {
-                            background: url(img/checkbox.png) no-repeat, url(img/check-solid.svg) no-repeat;
+                            background: url(../img/checkbox.png) no-repeat, url(img/check-solid.svg) no-repeat;
                             background-size: contain, 12px;
                             background-blend-mode: multiply;
                         }
