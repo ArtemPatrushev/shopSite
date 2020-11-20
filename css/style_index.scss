@@ -23,7 +23,7 @@ body {
     .container {
         height: inherit;
         /* box-shadow: 0 0 10px inset grey; */
-        background-image: url(img/topHeaderBack.png);
+        background-image: url(../img/topHeaderBack.png);
         background-repeat: no-repeat;
         background-position: top 5px right 40px;
         background-size: 545px;
@@ -83,13 +83,13 @@ main {
         }
         .offers_group1 {
             .offer1 {
-                background-image: url(img/offer1.jpg);
+                background-image: url(../img/offer1.jpg);
                 background-repeat: no-repeat;
                 width: 560px;
                 height: 542px;
             }
             .offer2 {
-                background-image: url(img/offer2.jpg);
+                background-image: url(../img/offer2.jpg);
                 background-repeat: no-repeat;
                 width: 560px;
                 height: 261px;
@@ -98,13 +98,13 @@ main {
         }
         .offers_group2 {
             .offer3 {
-                background-image: url(img/offer3.jpg);
+                background-image: url(../img/offer3.jpg);
                 background-repeat: no-repeat;
                 width: 560px;
                 height: 261px;
             }
             .offer4 {
-                background-image: url(img/offer4.jpg);
+                background-image: url(../img/offer4.jpg);
                 background-repeat: no-repeat;
                 width: 560px;
                 height: 542px;
@@ -204,35 +204,35 @@ main {
                 background-color: rgba(58,56,56,0.83);
             }
             .product_img1 {
-                background-image: url(img/product1.jpg);
+                background-image: url(../img/product1.jpg);
             } 
 
             .product_img2 {
-                background-image: url(img/product2.jpg);
+                background-image: url(../img/product2.jpg);
             }
 
             .product_img3 {
-                background-image: url(img/product3.jpg);
+                background-image: url(../img/product3.jpg);
             }
 
             .product_img4 {
-                background-image: url(img/product4.jpg);
+                background-image: url(../img/product4.jpg);
             }
 
             .product_img5 {
-                background-image: url(img/product5.jpg);
+                background-image: url(../img/product5.jpg);
             }
 
             .product_img6 {
-                background-image: url(img/product6.jpg);
+                background-image: url(../img/product6.jpg);
             }
 
             .product_img7 {
-                background-image: url(img/product7.jpg);
+                background-image: url(../img/product7.jpg);
             }
 
             .product_img8 {
-                background-image: url(img/product8.jpg);
+                background-image: url(../img/product8.jpg);
             }
             .product_text {
                 padding: 20px 91px 20px 15px;
@@ -283,7 +283,7 @@ main {
         .benefit_img {
             width: 767px;
             height: 529px; 
-            background-image: url(img/benefit_offer.jpg);
+            background-image: url(../img/benefit_offer.jpg);
             background-repeat: no-repeat;
             box-shadow: inset 250px 69px 161px 10px rgba(0,0,0,0.5);
             .benefit_label {
@@ -329,19 +329,19 @@ main {
                 color: #fbfbfb;
             }
             .benefit_point1 {
-                background-image: url(img/benefit_truck.svg);
+                background-image: url(../img/benefit_truck.svg);
                 background-repeat: no-repeat;
                 background-position: left 36px top 48px;
                 padding: 55px 0 0 111px;
             }
             .benefit_point2 {
-                background-image: url(img/benefit_sale.svg);
+                background-image: url(../img/benefit_sale.svg);
                 background-repeat: no-repeat;
                 background-position: left 36px top 48px;
                 padding: 55px 0 0 111px;
             }
             .benefit_point3 {
-                background-image: url(img/benefit_crown.svg);
+                background-image: url(../img/benefit_crown.svg);
                 background-repeat: no-repeat;
                 background-position: left 36px top 48px;
                 padding: 55px 0 0 111px;
