@@ -350,6 +350,12 @@ body {
   }
 }
 
+@media (max-width: 570px) {
+  .feedback_subscribe_block .container .feedback .feedback_content {
+    margin-left: 0;
+  }
+}
+
 .feedback_subscribe_block .container .feedback .feedback_content .feedback_text_top {
   width: 386px;
   font-size: 16px;
@@ -921,13 +927,13 @@ body {
   cursor: pointer;
 }
 
-.main .check_detail summary p {
+.main .check_detail summary span {
+  display: block;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
-  text-transform: uppercase;
 }
 
 .main .check_detail .lorem {

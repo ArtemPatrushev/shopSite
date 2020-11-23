@@ -38,14 +38,13 @@ body {
         summary {
             outline: none;
             cursor: pointer;
-            & p {
+            & span {
+                display: block;
                 font-size: 16px;
                 line-height: 1.2;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: #222222;
-                text-transform: uppercase;
-                // width: 240px;
             }
         }
         .lorem {
