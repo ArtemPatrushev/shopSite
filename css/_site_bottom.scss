@@ -225,6 +225,11 @@ body {
                 letter-spacing: 0.025em;
                 color: #222222;
                 box-sizing: border-box;
+                transition-duration: 2s;
+                transform: perspective(300px);
+                &:hover {
+                    transform: perspective(300px) rotateY(50deg);
+                }
                 @media (max-width: 655px) {
                     width: auto;
                 }
@@ -325,10 +330,11 @@ footer {
                 font-size: 16px;
                 letter-spacing: 0.025em;
                 color: #b2b2b2;
-                // проверить
-                // display: block; 
-                // display: flex;
-                // два флекса в одном месте
+                transition-duration: 1s;
+                transform-origin: 50% 50%;
+                &:hover {
+                    transform: rotateZ(360deg);
+                }
             }
             & a:not(:last-child) {
                 margin-right: 8px;
