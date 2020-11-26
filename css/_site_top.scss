@@ -126,6 +126,11 @@ header {
             .cart_img_header {
                 width: 32px;
                 height: 29px;
+                transition-duration: 1s;
+                transform-origin: 50% 50%;
+                &:hover {
+                    transform: rotateZ(360deg);
+                }
             }
             .account_button {
                 margin-left: 26px;
@@ -138,6 +143,14 @@ header {
                 letter-spacing: 0.025em;
                 color: #ffffff;
                 border: none;
+                -webkit-transition: all 0.8s;
+                transition-duration: 1s;
+                transform-origin: 50% 50%;
+                &:hover {
+                    color: black;
+                    background-color: #f8f3f4;
+                    transform: scaleX(1.2);
+                }
                 & i {
                     padding-left: 8px;
                 }
@@ -161,9 +174,11 @@ header {
         font-weight: 700;
         text-transform: uppercase;
         color: #222222;
+        transition-duration: 1s;
     }
     & a:hover {
         border-bottom: 3px solid #ef5b70;
+        transform: skewX(25deg);
     }
 
     @media (max-width: 750px) {

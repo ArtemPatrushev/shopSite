@@ -2,6 +2,8 @@
 @import "./site_top";
 @import "./site_bottom";
 @import "./style_new_arrivals";
+@import "./single_page_logo_animation";
+@import "./single_page_nav_animation";
 
 * {
     margin: 0;
@@ -41,6 +43,12 @@ body {
         object-position: center;
         object-fit: cover;
         margin: 0 auto;
+        -webkit-transition: all 0.8s;
+        transition-duration: 1s;
+        transform-origin: 50% 50%;
+        &:hover {
+            transform: scale(1.2);
+        }
         @media (max-width: 600px) {
             height: 570px;
         }
@@ -49,6 +57,9 @@ body {
         }
         @media (max-width: 360px) {
             height: 387px;
+            &:hover {
+                transform: scale(1);
+            }
         }
     }
     .product_slider_left {
@@ -300,6 +311,14 @@ body {
                     line-height: 1.2;
                     font-weight: 700;
                     color: #ef5b70;
+                    -webkit-transition: all 0.8s;
+                    transition-duration: 1s;
+                    transform-origin: 50% 50%;
+                    &:hover {
+                        color: black;
+                        background-color: #f8f3f4;
+                        transform: scaleY(1.2);
+                    }
                     & img {
                         height: 24px;
                         width: 26px;
@@ -346,9 +365,20 @@ body {
                     height: 280px;
                     padding: 5px 0 5px 0;
                     background-color: #e9e9e9;
+                    -webkit-transition: all 0.8s;
+                    transition-duration: 1s;
+                    transform-origin: 50% 50%;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
                     & img {
                         width: auto;
                         height: 100%;
+                    }
+                    @media (max-width: 360px) {
+                        &:hover {
+                            transform: scale(1.1);
+                        }
                     }
                 }
                 .proposal_product_text {
